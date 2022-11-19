@@ -1,11 +1,11 @@
 {
   "name": "@suik/create-simple-component",
   "version": "0.6.0",
-  "description": "Dashboard UI Kit createSimpleComponent",
+  "description": "Suftnet UI Kit createSimpleComponent",
   "main": "dist/index.js",
-  "repository": "https://github.com/march08/duik",
-  "homepage": "https://developer.dashboard-ui.com",
-  "author": "Roman Nguyen <march08@outlook.com>",
+  "repository": "https://github.com/aaghorighor/ui-kit",
+  "homepage": "https://uikit.suftnet.com",
+  "author": "Abel Aghorighor <abel.aghorighor@suftnet.com>",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
