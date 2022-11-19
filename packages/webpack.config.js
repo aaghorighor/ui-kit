@@ -11,13 +11,16 @@ const packages = fs
   .filter((item) => !item.endsWith('.js'))
   .filter(
     (item) =>
-      ![      
+      ![     
+        '_vars.scss', 
         '__generated_types',
         'dist',       
         'module.d.ts',
         'packages',
         'tsconfig.json',
-        'webpack.config.js',       
+        'webpack.config.js',  
+        '.DS_Store',   
+        'README.md',  
         'copyTypes.script.js',
         'all',
       ].includes(item)
