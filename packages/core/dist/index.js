@@ -91,31 +91,31 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 1:
+/***/ 21:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"bg-blue":"bg-blue","bg-indigo":"bg-indigo","bg-red":"bg-red","bg-orange":"bg-orange","bg-yellow":"bg-yellow","bg-green":"bg-green","text-blue":"text-blue","text-indigo":"text-indigo","text-red":"text-red","text-orange":"text-orange","text-yellow":"text-yellow","text-green":"text-green"};
+
+/***/ }),
+
+/***/ 8:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(21);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
     console.log("hello");
 });
 
-
-/***/ }),
-
-/***/ 6:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"bg-blue":"bg-blue","bg-indigo":"bg-indigo","bg-red":"bg-red","bg-orange":"bg-orange","bg-yellow":"bg-yellow","bg-green":"bg-green","text-blue":"text-blue","text-indigo":"text-indigo","text-red":"text-red","text-orange":"text-orange","text-yellow":"text-yellow","text-green":"text-green"};
 
 /***/ })
 

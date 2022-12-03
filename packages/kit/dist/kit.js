@@ -116,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./packages/kit/styles.scss?");
+eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"bg-blue\":\"bg-blue\",\"bg-indigo\":\"bg-indigo\",\"bg-red\":\"bg-red\",\"bg-orange\":\"bg-orange\",\"bg-yellow\":\"bg-yellow\",\"bg-green\":\"bg-green\",\"text-blue\":\"text-blue\",\"text-indigo\":\"text-indigo\",\"text-red\":\"text-red\",\"text-orange\":\"text-orange\",\"text-yellow\":\"text-yellow\",\"text-green\":\"text-green\",\"alert\":\"alert\",\"alert-left-el\":\"alert-left-el\",\"alert-right-el\":\"alert-right-el\",\"alert-primary\":\"alert-primary\",\"alert-success\":\"alert-success\",\"alert-danger\":\"alert-danger\",\"alert-warning\":\"alert-warning\",\"alert-blue\":\"alert-blue\",\"alert-indigo\":\"alert-indigo\",\"alert-red\":\"alert-red\",\"alert-orange\":\"alert-orange\",\"alert-yellow\":\"alert-yellow\",\"alert-green\":\"alert-green\",\"container\":\"container\",\"fluid\":\"fluid\"};\n\n//# sourceURL=webpack:///./packages/kit/styles.scss?");
 
 /***/ })
 

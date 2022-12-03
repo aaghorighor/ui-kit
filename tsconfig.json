@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./lib",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "target": "es5",
     "module": "commonjs",
     "noImplicitAny": true,
@@ -9,7 +10,7 @@
     "declaration": true,
     "jsx": "react",
     "typeRoots": [
-      "src/index.d.ts",
+      "packages/module.d.ts",
       "node_modules/@types"
     ]
   },

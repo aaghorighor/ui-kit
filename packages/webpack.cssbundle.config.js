@@ -17,7 +17,7 @@ const cssLoader = (isHashed = true) => ({
     modules: true,
     camelCase: false,
     importLoaders: 3,
-    localIdentName: isHashed ? "suik-[folder]__[local]__[hash:4]" : "[local]"
+    localIdentName: isHashed ? "suftnet-ui-[folder]__[local]__[hash:4]" : "[local]"
   }
 });
 
@@ -45,7 +45,7 @@ module.exports = {
   node: {
     fs: "empty"
   },
-  externals: [nodeExternals(), /^(@suik).*/i],
+  externals: [nodeExternals(), /^(@suftnet-ui).*/i],
   optimization: {
     // We no not want to minimize npm code.
     minimize: false,

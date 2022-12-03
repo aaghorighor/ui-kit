@@ -91,56 +91,71 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 2:
+/***/ 0:
 /***/ (function(module, exports) {
 
-// // for components that just needs styling
-// import * as React from "react";
-// import classnames from "classnames";
-// import { AnyTag, PropsWithTagProps } from "@suik/core";
-// export type CreateSimpleComponentDefaultProps = {
-//   displayName: string;
-//   className?: string;
-// };
-// export type CreateSimpleComponentProps = {
-//   defaultProps?: CreateSimpleComponentDefaultProps;
-// } & CreateSimpleComponentDefaultProps;
-// export type ComponentProps = React.PropsWithChildren<{
-//   className?: string;
-// }>;
-// export const createSimpleComponent = <T extends AnyTag>(
-//   options: { Component?: T } & PropsWithTagProps<T, CreateSimpleComponentProps>
-// ) => {
-//   const {
-//     displayName,
-//     className: defaultClassName,
-//     Component,
-//     defaultProps
-//   } = options;
-//   function SimpleComponent<Tag extends AnyTag>(
-//     props: PropsWithTagProps<Tag>
-//   ): JSX.Element {
-//     const { className, children, ...rest } = props;
-//     return (
-//       <Component className={classnames(defaultClassName, className)} {...rest}>
-//         {children}
-//       </Component>
-//     );
-//   }
-//   SimpleComponent.defaultProps = {
-//     className: null,
-//     children: null,
-//     ...defaultProps
-//   };
-//   SimpleComponent.displayName = displayName;
-//   return SimpleComponent;
-// };
-// export default createSimpleComponent;
+module.exports = require("react");
+
+/***/ }),
+
+/***/ 1:
+/***/ (function(module, exports) {
+
+module.exports = require("classnames");
+
+/***/ }),
+
+/***/ 9:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createSimpleComponent", function() { return createSimpleComponent; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+// for components that just needs styling
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __rest = (undefined && undefined.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+
+
+var createSimpleComponent = function (options) {
+    var displayName = options.displayName, defaultClassName = options.className, Component = options.Component, defaultProps = options.defaultProps;
+    function SimpleComponent(props) {
+        var className = props.className, children = props.children, rest = __rest(props, ["className", "children"]);
+        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Component, __assign({ className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(defaultClassName, className) }, rest), children));
+    }
+    SimpleComponent.defaultProps = __assign({ className: null, children: null }, defaultProps);
+    SimpleComponent.displayName = displayName;
+    return SimpleComponent;
+};
+/* harmony default export */ __webpack_exports__["default"] = (createSimpleComponent);
 
 
 /***/ })

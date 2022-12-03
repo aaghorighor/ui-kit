@@ -37,7 +37,7 @@ const cssLoader = (isHashed = true) => ({
     modules: true,
     camelCase: false,
     importLoaders: 3,
-    localIdentName: isHashed ? 'suik-[folder]__[local]__[hash:4]' : '[local]',
+    localIdentName: isHashed ? 'suftnet-ui-[folder]__[local]__[hash:4]' : '[local]',
   },
 });
 
@@ -71,7 +71,7 @@ module.exports = {
   node: {
     fs: 'empty',
   },
-  externals: [nodeExternals(), /^(@suik).*/i],
+  externals: [nodeExternals(), /^(@suftnet-ui).*/i],
   optimization: {
     // We no not want to minimize npm code.
     minimize: false,
@@ -104,14 +104,14 @@ module.exports = {
               limit: 10,
               name: '[hash].[ext]',
               publicPath: './',
-              outputPath: (url, resourcePath, context) => {
+              outputPath: (url, resourcePath, context) => {                
                 const relativePath = path.relative(
-                  path.resolve(context, 'packages'),
+                  path.resolve(context, 'packages'),              
                   resourcePath
                 );
-                const [packageName] = relativePath.split('/');
-
-                return `./${packageName}/dist/${url}`;
+              
+                const [packageName] = relativePath.split('/');                                    
+                return `./${'icon'}/dist/${url}`;
               },
             },
           },

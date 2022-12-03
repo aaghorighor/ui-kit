@@ -1,5 +1,5 @@
 import * as React from "react";
-export declare type OpenStateControls = {
+export type OpenStateControls = {
     isOpen: boolean;
     handleClose: () => void;
     handleOpen: () => void;

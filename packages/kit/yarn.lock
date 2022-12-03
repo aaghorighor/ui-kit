@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@suftnet-ui/alert@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@suftnet-ui/alert/-/alert-1.0.2.tgz#357b02c0619ca90bbead1d4f2f482b7566414c54"
+  integrity sha512-LXcUT3IBZuKrqN4TuD7QlTnXThVo6asMx3JVd9LD+HAn7FJrxHdWacodHjOyLrYcgyaSfYPGA+CwyKUKjzgS3w==
+  dependencies:
+    "@suftnet-ui/core" "^1.0.0"
+
 "@suftnet-ui/core@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@suftnet-ui/core/-/core-1.0.0.tgz#0541f85d6c80f052db71d2a6002b298f9e58259f"
@@ -9,6 +16,22 @@
   dependencies:
     "@types/react" "^16.8.16"
     "@types/react-dom" "^16.8.4"
+
+"@suftnet-ui/create-simple-component@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@suftnet-ui/create-simple-component/-/create-simple-component-1.0.0.tgz#a98c0b4e1983f5b58cd1ddb285e86f172675a010"
+  integrity sha512-Ubtd4ql2RGny0wwlcF8v1kslsdBKVMzKF6yVelpmW3qAIJdBhMMHuW/VK7fSvsAHE0UDoSQRAFRDszbf4fnZOQ==
+  dependencies:
+    "@suftnet-ui/core" "^1.0.0"
+    "@types/react" "^16.8.16"
+    "@types/react-dom" "^16.8.4"
+
+"@suftnet-ui/icon@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@suftnet-ui/icon/-/icon-1.0.1.tgz#7d1275a5649ba0868ae3366dca9044c0d3aec3bf"
+  integrity sha512-qWW7qgYVcQIXgqTYJUKamIr75p1tKNt3iEz2hn1NzLuyUDv6xvhgvywx0rtE9GudV71EXC16vg/x96uq3zAmgQ==
+  dependencies:
+    "@suftnet-ui/create-simple-component" "^1.0.0"
 
 "@types/prop-types@*":
   version "15.7.5"

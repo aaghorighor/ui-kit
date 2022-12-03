@@ -10,6 +10,15 @@
     "@types/react" "^16.8.16"
     "@types/react-dom" "^16.8.4"
 
+"@suftnet-ui/create-simple-component@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@suftnet-ui/create-simple-component/-/create-simple-component-1.0.0.tgz#a98c0b4e1983f5b58cd1ddb285e86f172675a010"
+  integrity sha512-Ubtd4ql2RGny0wwlcF8v1kslsdBKVMzKF6yVelpmW3qAIJdBhMMHuW/VK7fSvsAHE0UDoSQRAFRDszbf4fnZOQ==
+  dependencies:
+    "@suftnet-ui/core" "^1.0.0"
+    "@types/react" "^16.8.16"
+    "@types/react-dom" "^16.8.4"
+
 "@types/prop-types@*":
   version "15.7.5"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"

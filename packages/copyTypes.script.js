@@ -21,7 +21,7 @@ directories.forEach(dir => {
     // frikin fix for ts declaration gen
     const replaced = contentString.replace(
       new RegExp('"../core"', 'g'),
-      '"@suik/core"'
+      '"@suftnet-ui/core"'
     );
     fs.writeFileSync(path.resolve(__dirname, dir, 'dist', file), replaced);
   });

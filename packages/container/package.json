@@ -1,12 +1,12 @@
 {
-  "name": "@suftnet-ui/create-simple-component",
-  "version": "1.0.0",
-  "description": "Suftnet UI Kit createSimpleComponent",
+  "name": "@suftnet-ui/containers",
+  "version": "1.0.1",
+  "description": "Suftnet UI Containers",
   "main": "dist/index.js",
   "repository": "https://github.com/aaghorighor/ui-kit",
   "homepage": "https://uikit.suftnet.com",
   "author": "Abel Aghorighor <abel.aghorighor@suftnet.com>",
-  "license": "MIT",  
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
@@ -15,11 +15,6 @@
     "classnames": "^2.2.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  },
-  "dependencies": {
-    "@types/react": "^16.9.56",
-    "@types/react-dom": "^16.9.9",
-    "@suftnet-ui/core":"^1.0.0"
-  },
+  },  
   "gitHead": "7eed8237276864892b18bf2999daaf73ffc04739"
 }
