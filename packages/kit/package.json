@@ -1,6 +1,6 @@
 {
   "name": "@suftnet-ui/it",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Suftnet UI Kit",
   "main": "dist/index.js",
   "repository": "https://github.com/aaghorighor/ui-kit",
@@ -20,7 +20,7 @@
     "@suftnet-ui/core":"^1.0.0",
     "@suftnet-ui/alert":"^1.0.2",
     "@suftnet-ui/icon":"^1.0.2",
-    "@suftnet-ui/containers":"^1.0.1"
+    "@suftnet-ui/containers":"^1.0.2"
   },
   "gitHead": "aac1068af093da764b29262df63f965ec26083d5"
 }

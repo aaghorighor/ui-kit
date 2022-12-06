@@ -5,7 +5,7 @@ import cls from './styles.scss';
 
 export type ContainerProps = JSX.IntrinsicElements["div"] & {
     fluid?: boolean;
-    children: JSX.Element | JSX.Element[]
+    children?: React.ReactNode;
 };
 
 const Container = ({ children, fluid = false, ...rest }: ContainerProps) => {
