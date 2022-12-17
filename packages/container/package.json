@@ -1,7 +1,7 @@
 {
-  "name": "@suftnet-ui/grid",
-  "version": "1.0.0",
-  "description": "Suftnet UI Grid",
+  "name": "@suftnet-ui/containers",
+  "version": "1.0.4",
+  "description": "Suftnet UI Container",
   "main": "dist/index.js",
   "repository": "https://github.com/aaghorighor/ui-kit",
   "homepage": "https://uikit.suftnet.com",

@@ -9,6 +9,11 @@
   dependencies:
     "@suftnet-ui/core" "^1.0.0"
 
+"@suftnet-ui/containers@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@suftnet-ui/containers/-/containers-1.0.3.tgz#8e8b34d0ca704e3622c259c8028b1854664149f4"
+  integrity sha512-p96+Kv4xHUDX1UtCB8VRXm9VkDpHt+cEz9anhgp48sTnePTKi5s1DeOagiRkSu5hIY2rJDk919SMB+9nqaIJSQ==
+
 "@suftnet-ui/core@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@suftnet-ui/core/-/core-1.0.0.tgz#0541f85d6c80f052db71d2a6002b298f9e58259f"
@@ -26,12 +31,17 @@
     "@types/react" "^16.8.16"
     "@types/react-dom" "^16.8.4"
 
-"@suftnet-ui/icon@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@suftnet-ui/icon/-/icon-1.0.1.tgz#7d1275a5649ba0868ae3366dca9044c0d3aec3bf"
-  integrity sha512-qWW7qgYVcQIXgqTYJUKamIr75p1tKNt3iEz2hn1NzLuyUDv6xvhgvywx0rtE9GudV71EXC16vg/x96uq3zAmgQ==
+"@suftnet-ui/icon@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@suftnet-ui/icon/-/icon-1.0.2.tgz#f7aed74953132da6df06fa2ddd8694f0f873cf77"
+  integrity sha512-ADDdvp7F2nksEirUNfktcmaHGHqicAh+n2qqgDQlwG46EMfTSnWDgPSjiphzckXJRsGj5H1o/Ctm0N9WCxNuRA==
   dependencies:
     "@suftnet-ui/create-simple-component" "^1.0.0"
+
+"@suftnet-ui/layout@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@suftnet-ui/layout/-/layout-1.0.6.tgz#1b9160fd4d8f22d06a7e27031f8e23e3f2f2495a"
+  integrity sha512-lwf1/oEAsMlUvjnilhPcY/oxZhDCS7N08McpLyBxLf7QZzskTWUskhevpET8Bq7ieBOEk/1PmtAARU8RV7JvTQ==
 
 "@types/prop-types@*":
   version "15.7.5"

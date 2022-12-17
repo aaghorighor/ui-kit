@@ -1,0 +1,183 @@
+$padding: 8;
+
+$breakpoints: (
+  'sm': 600px,
+  'md': 960px,
+  'lg': 1280px,
+);
+
+$justifyContent: (flex-start, center, space-between, flex-end);
+
+$alignContent: (
+  stretch,
+  flex-start,
+  center,
+  flex-end,
+  space-between,
+  space-around
+);
+
+$alignItems: (stretch, flex-start, center, flex-end, baseline);
+
+$direction: (row, row-reverse, column, column-reverse);
+
+@mixin breakpoint($name) {
+  @media screen and (min-width: map-get($breakpoints, $name)) {
+    @content;
+  }
+}
+
+.Grid {
+  &__row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  &__col {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  @for $i from 1 to 13 {
+    &__xs-#{$i} {
+      flex-basis: $i/12 * 100%;
+    }
+  }
+
+  @include breakpoint('sm') {
+    @for $i from 1 to 13 {
+      &__sm-#{$i} {
+        flex-basis: $i/12 * 100%;
+      }
+    }
+  }
+
+  @include breakpoint('md') {
+    @for $i from 1 to 13 {
+      &__md-#{$i} {
+        flex-basis: $i/12 * 100%;
+      }
+    }
+  }
+
+  @include breakpoint('lg') {
+    @for $i from 1 to 13 {
+      &__lg-#{$i} {
+        flex-basis: $i/12 * 100%;
+      }
+    }
+  }
+
+  @for $i from 0 to 11 {
+    &__spacing-#{$i} {
+      margin: -$i * 4 + px;
+      width: calc(100% + #{$padding * $i + 'px'});
+    }
+
+    &__spacing-#{$i} > &__col {
+      padding: $i * 4 + px;
+    }
+  }
+
+  @each $i in $justifyContent {
+    &__justifyContent-#{$i} {
+      justify-content: $i;
+    }
+  }
+
+  @each $i in $alignContent {
+    &__alignContent-#{$i} {
+      align-content: $i;
+    }
+  }
+
+  @each $i in $alignItems {
+    &__alignItems-#{$i} {
+      align-items: $i;
+    }
+  }
+
+  @each $i in $direction {
+    &__direction-#{$i} {
+      flex-direction: $i;
+    }
+  }
+}
+
+.header,
+.sidebar,
+.content,
+.footer {
+  display: flex;
+  @each $i in $alignItems {
+    &__alignItems-#{$i} {
+      align-items: $i;
+    }
+  }
+
+  @each $i in $direction {
+    &__direction-#{$i} {
+      flex-direction: $i;
+    }
+  }
+
+  @each $i in $justifyContent {
+    &__justifyContent-#{$i} {
+      justify-content: $i;
+    }
+  }
+
+  @each $i in $alignContent {
+    &__alignContent-#{$i} {
+      align-content: $i;
+    }
+  }
+}
+
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  &__header {
+    grid-column: 1/3;
+  }
+  &__sidebar {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  &__content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  &__footer {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    &__header {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    &__sidebar {
+      display: none;
+    }
+    &__content {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    &__footer {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+  }
+}

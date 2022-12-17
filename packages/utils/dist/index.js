@@ -91,14 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 13);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 13:
-/***/ (function(module, exports) {
+/***/ 14:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isNumber", function() { return isNumber; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "suffix", function() { return suffix; });
+var isNumber = function (value) { return !Number.isNaN(parseInt(value + '', 10)); };
+var suffix = function (value) { return (isNumber(value) ? "-".concat(value) : ''); };
 
 
 /***/ })

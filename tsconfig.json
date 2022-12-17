@@ -8,6 +8,7 @@
     "strictNullChecks": true,
     "removeComments": true,
     "declaration": true,
+    "esModuleInterop": true,
     "jsx": "react",
     "typeRoots": [
       "packages/module.d.ts",
@@ -16,7 +17,8 @@
   },
   "include": [
     "./packages/*/src/**/*.tsx",
-    "./packages/*/src/**/*.ts"
+    "./packages/*/src/**/*.ts",
+    "./packages/*/src/**/*.js"
   ],
   "exclude": [
     "node_modules"
